@@ -10,36 +10,27 @@
 
     <EditText
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/enter_value"
-        android:hint="To File"/>
+        android:layout_height="48dp"
+        android:id="@+id/FirstName"
+        android:hint="Enter your First Name"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/LastName"
+        android:hint="Enter your Last Name"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Write to File"
-        android:id="@+id/write_to_file"/>
+        android:text="Save"
+        android:id="@+id/save_btn"/>
 
     <Space
         android:layout_width="match_parent"
         android:layout_height="80dp"
         android:background="@color/black"/>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Read from File"
-        android:id="@+id/read_from_file"/>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Content of file here"
-        android:id="@+id/text_of_file"/>
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:background="#FFAA00"/>
     <Button
         android:id="@+id/go_back_btn"
         android:layout_width="wrap_content"

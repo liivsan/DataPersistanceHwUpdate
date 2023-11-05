@@ -36,6 +36,8 @@ class NameRepository private constructor(context: Context) {
     }
 
 
+    fun getUserByName(firstName: String, lastName: String): User? = usrDao.findByName(firstName, lastName)
+
     fun getUser(id: Long): User? = usrDao.getUser(id)
 
     fun getAll(): List<User> = usrDao.getAll()
@@ -45,6 +47,4 @@ class NameRepository private constructor(context: Context) {
     }
 
     fun deleteUser(usr: User) = usrDao.delete(usr)
-
-
 }
